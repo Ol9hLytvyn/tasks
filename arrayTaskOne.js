@@ -1,1 +1,46 @@
+`use strict`;
+
+/* 
+
+1. **Задача на повернення ініціалів для кожного імені з масиву, посортованих в алфавітному порядку:**
+
+const userNames = ["Петрик Ольга Іванівна", "Гнатюк Петро Антонович", "Рудко Андрій Опанасович"];
+let initials;
+
+/ тут ваш код ...*
+
+console.log(initials); // [ "Г.П.А", "П.О.І", "Р.А.О"]
+
+*/
+
+const userNames = [
+  'Петрик Ольга Іванівна',
+  'Гнатюк Петро Антонович',
+  'Рудко Андрій Опанасович',
+];
+
+let initials = userNames.toString();
+let cutFirst =
+  initials.substring(0, 1) +
+  '.' +
+  initials.substring(7, 8) +
+  '.' +
+  initials.substring(13, 14) +
+  ', ' +
+  initials.substring(22, 23) +
+  '.' +
+  initials.substring(29, 30) +
+  '.' +
+  initials.substring(35, 36) +
+  ', ' +
+  initials.substring(45, 46) +
+  '.' +
+  initials.substring(51, 52) +
+  '.' +
+  initials.substring(58, 59);
+
+initials = cutFirst.split(' ').sort();
+
+console.log(initials); //[ "Г.П.А", "П.О.І", "Р.А.О"];
+// console.log(cutFirst); // П.О.І, Г.П.А, Р.А.О
 
