@@ -12,7 +12,8 @@ let initials;
 console.log(initials); // [ "Г.П.А", "П.О.І", "Р.А.О"]
 
 */
-
+// v1
+/*
 const userNames = [
   'Петрик Ольга Іванівна',
   'Гнатюк Петро Антонович',
@@ -43,4 +44,15 @@ initials = cutFirst.split(' ').sort();
 
 console.log(initials); //[ "Г.П.А", "П.О.І", "Р.А.О"];
 // console.log(cutFirst); // П.О.І, Г.П.А, Р.А.О
+*/
 
+// v2
+const userNames = ['Петрик Ольга Іванівна'];
+
+const initials = userNames.map(function (word) {
+  let convertedArr = String(word).slice(0, 1);
+  
+  console.log(convertedArr);
+});
+
+console.log(initials);
