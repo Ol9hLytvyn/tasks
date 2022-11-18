@@ -47,12 +47,19 @@ console.log(initials); //[ "Г.П.А", "П.О.І", "Р.А.О"];
 */
 
 // v2
+// 
 const userNames = ['Петрик Ольга Іванівна'];
 
 const initials = userNames.map(function (word) {
-  let convertedArr = String(word).slice(0, 1);
-  
+  let convertedArr =
+    String(word).slice(0, 1) +
+    '.' +
+    String(word).slice(7, 8) +
+    '.' +
+    String(word).slice(13, 14);
+  return convertedArr;
   console.log(convertedArr);
 });
 
 console.log(initials);
+
