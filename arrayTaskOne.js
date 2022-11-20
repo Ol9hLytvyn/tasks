@@ -68,4 +68,16 @@ console.log(initials);
 //
 // v3
 
+const userNames = [
+  'Петрик Ольга Іванівна',
+  'Гнатюк Петро Антонович',
+  'Рудко Андрій Опанасович',
+];
 
+let initials = userNames.map((initial) => {
+  let strConv = initial.split().toString();
+  console.log(strConv);
+  return strConv.charAt(0) + strConv.charAt(7) + strConv.charAt(13);
+});
+
+console.log(initials);
