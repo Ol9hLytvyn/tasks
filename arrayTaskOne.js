@@ -47,7 +47,8 @@ console.log(initials); //[ "Г.П.А", "П.О.І", "Р.А.О"];
 */
 
 // v2
-// 
+//
+/*
 const userNames = ['Петрик Ольга Іванівна'];
 
 const initials = userNames.map(function (word) {
@@ -62,4 +63,9 @@ const initials = userNames.map(function (word) {
 });
 
 console.log(initials);
+*/
+
+//
+// v3
+
 
